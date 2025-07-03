@@ -1,0 +1,131 @@
+/* Base application styling: modern volumetric theme */
+QWidget {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #f5f6fa, stop:1 #eaeef5);
+    color: #333333;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 11pt;
+}
+
+/* Group boxes (elevated panels) */
+QGroupBox {
+    background-color: #ffffff;
+    border: 1px solid #d1d4db;
+    border-radius: 8px;
+    margin-top: 1em;
+    padding: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+    color: #444444;
+    font-weight: 600;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    background-color: #ffffff;
+}
+
+/* Buttons: soft gradient with subtle shadow */
+QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #ffffff, stop:1 #e3e7ea);
+    color: #333333;
+    border: 1px solid #b0bac5;
+    border-radius: 6px;
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #f7f8fa, stop:1 #d8dde1);
+}
+QPushButton:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #dee2e6, stop:1 #c2c8cc);
+}
+QPushButton:checked {
+    background-color: #00aaff;
+    border: 1px solid #008ecc;
+    color: #ffffff;
+}
+
+/* Highlight key action buttons */
+QPushButton#submitExpensesBtn,
+QPushButton#submitIncomeBtn,
+QPushButton#confirmMonthBtn {
+    background-color: #00aaff;
+    color: #ffffff;
+    border: none;
+}
+QPushButton#submitExpensesBtn:hover,
+QPushButton#submitIncomeBtn:hover,
+QPushButton#confirmMonthBtn:hover {
+    background-color: #008ecc;
+}
+
+/* Line edits and date edits: inset effect */
+QLineEdit, QDateEdit {
+    background-color: #ffffff;
+    border: 1px solid #bcc4cc;
+    border-radius: 4px;
+    padding: 6px;
+    color: #333333;
+    selection-background-color: #cce5ff;
+}
+
+/* Labels */
+QLabel {
+    color: #333333;
+}
+QLabel[alignment="AlignCenter"] {
+    font-size: 12pt;
+    color: #00aaff;
+    font-weight: 600;
+}
+
+/* Tables: alternating rows and raised header */
+QTableWidget {
+    background-color: #ffffff;
+    gridline-color: #e0e4e8;
+    alternate-background-color: #f7f9fb;
+    border: 1px solid #d1d4db;
+}
+QHeaderView::section {
+    background-color: #e3e7ea;
+    padding: 4px;
+    border: 1px solid #bcc4cc;
+    border-radius: 4px;
+}
+QTableWidget::item:selected {
+    background-color: #cce5ff;
+    color: #333333;
+}
+
+/* Canvas placeholders (charts) */
+QWidget > FigureCanvasQTAgg {
+    background-color: transparent;
+}
+
+/* Scrollbars: minimal design */
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    margin: 20px 0 20px 0;
+}
+QScrollBar::handle:vertical {
+    background: #bcc4cc;
+    min-height: 20px;
+    border-radius: 5px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+/* Tooltips: card-like */
+QToolTip {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #bcc4cc;
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}

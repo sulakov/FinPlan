@@ -1,0 +1,650 @@
+{
+  "meta": {
+    "period_start": "2000-01-01",
+    "window_offset": 3
+  },
+  "entries": {
+    "2000-01": [
+      {
+        "date": "2000-01-01",
+        "category": "Employee Salaries",
+        "direction": "expense",
+        "amount": "200",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Taxes and Fees",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Rent and Utilities",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Subscriptions and IT Services",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Marketing, Advertising, Promotion",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Freelancers/Contractors",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Loan Interests",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Loan Principal",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Other Expenses",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Subscriptions (paid)",
+        "direction": "income",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Prepaid Contracts",
+        "direction": "income",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Confirmed Investments",
+        "direction": "income",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Potential Sales",
+        "direction": "income",
+        "amount": "100",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Planned but Unconfirmed Investments",
+        "direction": "income",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-01-01",
+        "category": "Crowdfunding (expected)",
+        "direction": "income",
+        "amount": "0",
+        "type": "actual"
+      }
+    ],
+    "2000-02": [
+      {
+        "date": "2000-02-01",
+        "category": "Subscriptions (paid)",
+        "direction": "income",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Prepaid Contracts",
+        "direction": "income",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Confirmed Investments",
+        "direction": "income",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Potential Sales",
+        "direction": "income",
+        "amount": "200",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Planned but Unconfirmed Investments",
+        "direction": "income",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Crowdfunding (expected)",
+        "direction": "income",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Employee Salaries",
+        "direction": "expense",
+        "amount": "100",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Taxes and Fees",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Rent and Utilities",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Subscriptions and IT Services",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Marketing, Advertising, Promotion",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Freelancers/Contractors",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Loan Interests",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Loan Principal",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-02-01",
+        "category": "Other Expenses",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      }
+    ],
+    "2000-03": [
+      {
+        "date": "2000-03-01",
+        "category": "Employee Salaries",
+        "direction": "expense",
+        "amount": "9000",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Taxes and Fees",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Rent and Utilities",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Subscriptions and IT Services",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Marketing, Advertising, Promotion",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Freelancers/Contractors",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Loan Interests",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Loan Principal",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Other Expenses",
+        "direction": "expense",
+        "amount": "0",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Subscriptions (paid)",
+        "direction": "income",
+        "amount": "8000",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Prepaid Contracts",
+        "direction": "income",
+        "amount": "500",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Confirmed Investments",
+        "direction": "income",
+        "amount": "500",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Potential Sales",
+        "direction": "income",
+        "amount": "500",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Planned but Unconfirmed Investments",
+        "direction": "income",
+        "amount": "500",
+        "type": "actual"
+      },
+      {
+        "date": "2000-03-01",
+        "category": "Crowdfunding (expected)",
+        "direction": "income",
+        "amount": "500",
+        "type": "actual"
+      }
+    ],
+    "2000-04": [
+      {
+        "date": "2000-04-01",
+        "category": "Subscriptions (paid)",
+        "direction": "income",
+        "amount": "400",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Prepaid Contracts",
+        "direction": "income",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Confirmed Investments",
+        "direction": "income",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Potential Sales",
+        "direction": "income",
+        "amount": "400",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Planned but Unconfirmed Investments",
+        "direction": "income",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Crowdfunding (expected)",
+        "direction": "income",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Employee Salaries",
+        "direction": "expense",
+        "amount": "400",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Taxes and Fees",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Rent and Utilities",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Subscriptions and IT Services",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Marketing, Advertising, Promotion",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Freelancers/Contractors",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Loan Interests",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Loan Principal",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-04-01",
+        "category": "Other Expenses",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      }
+    ],
+    "2000-05": [
+      {
+        "date": "2000-05-01",
+        "category": "Employee Salaries",
+        "direction": "expense",
+        "amount": "800",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Taxes and Fees",
+        "direction": "expense",
+        "amount": "800",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Rent and Utilities",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Subscriptions and IT Services",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Marketing, Advertising, Promotion",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Freelancers/Contractors",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Loan Interests",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Loan Principal",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Other Expenses",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Subscriptions (paid)",
+        "direction": "income",
+        "amount": "800",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Prepaid Contracts",
+        "direction": "income",
+        "amount": "800",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Confirmed Investments",
+        "direction": "income",
+        "amount": "800",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Potential Sales",
+        "direction": "income",
+        "amount": "800",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Planned but Unconfirmed Investments",
+        "direction": "income",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-05-01",
+        "category": "Crowdfunding (expected)",
+        "direction": "income",
+        "amount": "0",
+        "type": "forecast"
+      }
+    ],
+    "2000-06": [
+      {
+        "date": "2000-06-01",
+        "category": "Subscriptions (paid)",
+        "direction": "income",
+        "amount": "2222",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Prepaid Contracts",
+        "direction": "income",
+        "amount": "2222",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Confirmed Investments",
+        "direction": "income",
+        "amount": "2222",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Potential Sales",
+        "direction": "income",
+        "amount": "222",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Planned but Unconfirmed Investments",
+        "direction": "income",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Crowdfunding (expected)",
+        "direction": "income",
+        "amount": "2222",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Employee Salaries",
+        "direction": "expense",
+        "amount": "9000",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Taxes and Fees",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Rent and Utilities",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Subscriptions and IT Services",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Marketing, Advertising, Promotion",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Freelancers/Contractors",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Loan Interests",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Loan Principal",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      },
+      {
+        "date": "2000-06-01",
+        "category": "Other Expenses",
+        "direction": "expense",
+        "amount": "0",
+        "type": "forecast"
+      }
+    ]
+  }
+}
