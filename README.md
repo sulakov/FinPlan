@@ -19,7 +19,7 @@ Over time, it evolved into a desktop GUI tool that allows you to:
 
 This is the first version of the application. The code still requires refactoring and more testing.
 
-![App screenshot](screenshot.png)
+![App screenshot](screenshot.jpg)
 
 
 ## Prerequisites
