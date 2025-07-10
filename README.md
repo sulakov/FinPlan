@@ -3,18 +3,24 @@
 **Version:** 0.1.0  
 **Author:** Eugen Sulakov  
 
-My first Python application in which I combined my previous experience as a finance professional with my modest programming skills. The idea originated as a simple Excel spreadsheet created to help a promising startup with short-term financial planning. Over time it evolved into a desktop GUI tool that lets you:
+My first Python application where I combined my previous experience as a finance professional with my basic programming skills.  
+The idea started as a simple Excel spreadsheet built to help a startup with short-term financial planning.  
+Over time, it evolved into a desktop GUI tool that allows you to:
 
 - Enter and categorize financial transactions (income, expenses, transfers)  
-- Build scenarios and compare “what-if” projections side by side  
-- Shift periods forward to simulate cash-flow timing changes  
-- View aggregated monthly data in tables and charts  
-- Generate interactive charts (via Matplotlib) for quick visual analysis  
-- Save and load your workbook as JSON for easy sharing and backup  
-- Customize categories and constants to fit your own business logic  
+- Build and compare financial scenarios (“what-if” planning)  
+- Shift periods forward to simulate cash-flow timing  
+- View monthly data in tables and visual charts  
+- Generate interactive charts using Matplotlib  
+- Save and load your workbook as JSON (for sharing or backup)  
+- Customize categories and constants to match your business logic  
 
 ---
-This is the very first version of the program; the code still needs refactoring and testing.
+
+This is the first version of the application. The code still requires refactoring and more testing.
+
+![App screenshot](screenshot.png)
+
 
 ## Prerequisites
 
@@ -52,3 +58,7 @@ PROJECT_ROOT/
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+
+
+[def]: screenshot.png
