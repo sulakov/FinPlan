@@ -34,6 +34,7 @@ This is the first version of the application. The code still requires refactorin
 - Secure login and encrypted file storage  
 - Importing financial data from Excel files  
 - Option to extend or shorten the forecast horizon (currently fixed to 3 months)
+  
 **Planned financial features:**
 - Goal-based planning (e.g. “stay solvent until product launch”)  
 - Side-by-side comparison of financial scenarios  
