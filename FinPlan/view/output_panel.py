@@ -7,49 +7,64 @@ from PyQt5.QtCore import Qt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 
+"""
+    OutputPanel displays the right-hand side of the main window UI,
+    containing all forecast-related output components.
+
+    It includes:
+    - A forecast data table showing financial entries (expenses/income)
+    - A forecast metrics table with calculated values (net cash flow, closing balance, runway)
+    - Two line charts for visualizing net cash flow and runway over time
+
+    Layout structure:
+    - Top half: two horizontally aligned tables
+    - Bottom half: two vertically stacked matplotlib charts
+
+    Used for displaying all financial results and projections after user input.
+"""
+
 class OutputPanel(QGroupBox):
     def __init__(self, parent=None):
         super().__init__("", parent)
-        self.setFixedWidth(900)  # расширенная ширина
+        self.setFixedWidth(900)  # Extended width
 
         main_layout = QVBoxLayout(self)
         main_layout.setContentsMargins(0, 0, 0, 0)
         main_layout.setSpacing(10)
 
-        # Верхняя часть: две таблицы в горизонтальном layout
+        # Top section: two tables in a horizontal layout
         top_tables = QWidget()
         top_layout = QHBoxLayout(top_tables)
         top_layout.setContentsMargins(0, 0, 0, 0)
         top_layout.setSpacing(10)
 
-        # Таблица с данными
+        # Forecast data table
         self.entries_group = QGroupBox("Forecast Data")
         entries_layout = QVBoxLayout(self.entries_group)
         entries_layout.setContentsMargins(5, 5, 5, 5)
         self.entries_table = QTableWidget()
         self.entries_table.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         entries_layout.addWidget(self.entries_table)
-        top_layout.addWidget(self.entries_group, stretch=2)  # 2 части из 4
+        top_layout.addWidget(self.entries_group, stretch=2)  # 2 out of 4 parts
 
-
-        # Таблица прогнозных метрик
+        # Forecast metrics table
         self.forecast_group = QGroupBox("Forecast Metrics")
         forecast_layout = QVBoxLayout(self.forecast_group)
         self.forecast_table = QTableWidget()
         self.forecast_table.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         forecast_layout.addWidget(self.forecast_table)
-        top_layout.addWidget(self.forecast_group, stretch=2) # 2 части из 4
+        top_layout.addWidget(self.forecast_group, stretch=2)  # 2 out of 4 parts
 
         main_layout.addWidget(top_tables)
 
-        # Нижняя часть: графики вертикально
+        # Bottom section: charts stacked vertically
         bottom = QWidget()
         bottom_layout = QVBoxLayout(bottom)
         bottom_layout.setContentsMargins(0, 0, 0, 0)
         bottom_layout.setSpacing(5)
         bottom.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
 
-        # Ограничиваем высоту групп с графиками
+        # Limit the height of chart groups
         self.chart_group1 = QGroupBox("Net Cash Flow")
         self.chart_group1.setMaximumHeight(200)
         chart1_layout = QVBoxLayout(self.chart_group1)
@@ -74,7 +89,7 @@ class OutputPanel(QGroupBox):
 
         main_layout.addWidget(bottom)
 
-        # Распределение пространства между таблицами и графиками
+        # Distribute space between tables and charts
         main_layout.setStretchFactor(top_tables, 2)
         main_layout.setStretchFactor(bottom, 1)
 

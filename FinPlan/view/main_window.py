@@ -12,7 +12,12 @@ from ..model.constants import (
 )
 from ..controller.fin_controller import FinController
 
-# Ширина полей ввода, используется в InputPanel
+"""
+Main application window that combines input and output panels,
+initializes layout, styles, and controller.
+"""
+
+# Input field width, used in InputPanel
 INPUT_FIELD_WIDTH = 120
 
 class MainWindow(QWidget):
@@ -23,29 +28,28 @@ class MainWindow(QWidget):
         self.setWindowTitle("FinPlan – Main Window")
         self.setGeometry(100, 100, 1600, 700)
         self.setMinimumSize(1300, 700)
-        # фон и прочее теперь из style.qss
+        # Background and other styles now come from style.qss
         # self.setStyleSheet("background-color: white;")
 
         layout = QHBoxLayout(self)
         layout.setContentsMargins(20, 20, 20, 20)
         layout.setSpacing(30)
 
-        # Создаём панели
+        # Create main panels
         self.input_panel = InputPanel(self)
         self.output_panel = OutputPanel(self)
         layout.addWidget(self.input_panel)
         layout.addWidget(self.output_panel)
 
-        # --- объём: навешиваем drop-shadow на панели ---
+        # Add drop shadow effect to panels
         for panel in (self.input_panel, self.output_panel):
             shadow = QGraphicsDropShadowEffect(self)
-            shadow.setBlurRadius(20)               # сила размытия
-            shadow.setOffset(0, 4)                # смещение тени по X и Y
-            shadow.setColor(QColor(0, 0, 0, 80))  # полупрозрачная чёрная тень
+            shadow.setBlurRadius(20)               # Blur radius
+            shadow.setOffset(0, 4)                # Shadow offset on X and Y axes
+            shadow.setColor(QColor(0, 0, 0, 80))  # Semi-transparent black shadow
             panel.setGraphicsEffect(shadow)
-        # -------------------------------------------------
 
-        # Заполняем панели списками из модели
+        # Populate panels with category lists from model
         self.input_panel.set_expense_items(
             DEFAULT_EXPENSE_CATEGORIES,
             INPUT_FIELD_WIDTH
@@ -56,23 +60,13 @@ class MainWindow(QWidget):
             INPUT_FIELD_WIDTH
         )
 
-        # Привязываем контроллер
-        self.set_controller(FinController(self))
-
-    def set_controller(self, controller):
-        """
-        Привязывает контроллер к View и настраивает сигналы.
-        """
-        self.controller = controller
-        # Пример подключения сигналов (зависит от реализации InputPanel):
-        # self.input_panel.expense_added.connect(controller.add_expense)
-        # self.input_panel.income_added.connect(controller.add_income)
-        # self.input_panel.forecast_requested.connect(controller.generate_forecast)
+        # Bind controller to the view
+        self.controller = FinController(self)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
-    # Подгружаем внешний QSS из папки resources
+    # Load external QSS stylesheet from resources folder
     current_dir = os.path.dirname(os.path.abspath(__file__))
     project_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
     qss_path = os.path.join(project_dir, "resources", "style.qss")
@@ -80,7 +74,7 @@ if __name__ == "__main__":
         with open(qss_path, "r", encoding="utf-8") as f:
             app.setStyleSheet(f.read())
     else:
-        print(f"Warning: не найден файл стилей по пути: {qss_path}")
+        print(f"Warning: style file not found at path: {qss_path}")
 
     w = MainWindow()
     w.show()
