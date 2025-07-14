@@ -32,7 +32,7 @@ class OutputPanel(QGroupBox):
         main_layout.setContentsMargins(0, 0, 0, 0)
         main_layout.setSpacing(10)
 
-        # Top section: two tables in a horizontal layout
+        # Top section
         top_tables = QWidget()
         top_layout = QHBoxLayout(top_tables)
         top_layout.setContentsMargins(0, 0, 0, 0)
@@ -57,7 +57,7 @@ class OutputPanel(QGroupBox):
 
         main_layout.addWidget(top_tables)
 
-        # Bottom section: charts stacked vertically
+        # Bottom section
         bottom = QWidget()
         bottom_layout = QVBoxLayout(bottom)
         bottom_layout.setContentsMargins(0, 0, 0, 0)

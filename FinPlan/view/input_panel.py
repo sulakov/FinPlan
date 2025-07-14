@@ -152,11 +152,11 @@ class InputPanel(QGroupBox):
         grid.setColumnStretch(0, 1)
         grid.setColumnStretch(1, 0)
 
-    # Fill expense input grid
+    # Fill grids
+    
     def set_expense_items(self, items: list[str], input_width: int):
         self._set_items_in_grid(self.exp_grid, items, input_width, self.exp_inputs)
-
-    # Fill income input grids (guaranteed + expected)
+        
     def set_income_items(self, guaranteed: list[str], expected: list[str], input_width: int):
         self._set_items_in_grid(self.inc_guar_grid, guaranteed, input_width, self.inc_guar_inputs)
         self._set_items_in_grid(self.inc_exp_grid, expected, input_width, self.inc_exp_inputs)
@@ -189,40 +189,39 @@ class InputPanel(QGroupBox):
         for btn in self.month_buttons:
             btn.setChecked(False)
 
-    # Enable or disable date selector
+    # Enable or disable date selector and month buttons
     def enable_date_selection(self, enabled: bool):
         self.startDateEdit.setEnabled(enabled)
         self.confirmMonthBtn.setEnabled(enabled)
 
-    # Enable or disable month buttons
     def enable_month_buttons(self, enabled: bool):
         for btn in self.month_buttons:
             btn.setEnabled(enabled)
 
-    # Return expense input widgets
+    # Return widgets
+    
     def get_expense_inputs(self):
         return self.exp_inputs
 
-    # Return income input widgets (guaranteed + expected)
     def get_income_inputs(self):
         return self.inc_guar_inputs + self.inc_exp_inputs
 
-    # Clear all expense input fields
+    # Clear all fields
+    
     def clear_expense_inputs(self):
         for w in self.exp_inputs:
             w.clear()
 
-    # Clear all income input fields
     def clear_income_inputs(self):
         for w in self.inc_guar_inputs + self.inc_exp_inputs:
             w.clear()
 
-    # Set values into expense fields
+    # Set values into fields
+    
     def set_expense_values(self, values: dict[str, str]):
         for name, widget in zip(values, self.exp_inputs):
             widget.setText(str(values.get(name, "")))
 
-    # Set values into income fields
     def set_income_values(self, values: dict[str, str]):
         all_widgets = self.inc_guar_inputs + self.inc_exp_inputs
         for name, widget in zip(values, all_widgets):

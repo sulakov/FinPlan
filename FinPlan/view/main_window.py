@@ -44,7 +44,7 @@ class MainWindow(QWidget):
         # Add drop shadow effect to panels
         for panel in (self.input_panel, self.output_panel):
             shadow = QGraphicsDropShadowEffect(self)
-            shadow.setBlurRadius(20)               # Blur radius
+            shadow.setBlurRadius(20)         # Blur radius
             shadow.setOffset(0, 4)                # Shadow offset on X and Y axes
             shadow.setColor(QColor(0, 0, 0, 80))  # Semi-transparent black shadow
             panel.setGraphicsEffect(shadow)
